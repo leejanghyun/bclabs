@@ -46,7 +46,7 @@ export type CommonResponse = {
   detail: string;
 };
 
-const MAX_TIMEOUT = 6000; // Timeout 정책 (Max:15초)
+const MAX_TIMEOUT = 6000; // Timeout 정책 (Max:6초)
 
 /**
  * Default Config 설정 객체 반환

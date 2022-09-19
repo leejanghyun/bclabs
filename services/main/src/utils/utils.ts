@@ -29,17 +29,6 @@ export const hasProperty = <K extends object>(obj: K, props: string): boolean =>
 };
 
 /**
- * 난수 배열 생성
- * @param len 난수 배열 길이
- * @returns 난수가 담긴 배열
- */
-export const cryptoRandomValues = (len: number) => {
-  const array = new Uint32Array(len);
-  window.crypto.getRandomValues(array);
-  return array;
-};
-
-/**
  * UUID 생성
  * @returns UUID 값
  */
@@ -49,15 +38,6 @@ export const getUid = () => {
     const value = str == 'x' ? random : (random & 0x3) | 0x8;
     return value.toString(16);
   });
-};
-
-/**
- * 초를 (MM:SS) 형태로 변환
- * @param seconds 초
- * @returns (MM:SS) 포맷 시간 데이터
- */
-export const formatMinnuteSecond = (seconds = 0) => {
-  return (seconds - (seconds %= 60)) / 60 + (9 < seconds ? ':' : ':0') + seconds;
 };
 
 /**
