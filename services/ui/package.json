@@ -1,0 +1,58 @@
+{
+  "name": "ui",
+  "packageManager": "yarn@3.2.2",
+  "main": "src/index.ts",
+  "version": "0.0.0",
+  "scripts": {
+    "storybook": "start-storybook -p 4000"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      [
+        "@babel/react",
+        {
+          "runtime": "automatic",
+          "importSource": "@emotion/react"
+        }
+      ],
+      "@babel/preset-typescript"
+    ],
+    "include": [
+      "src/**/*"
+    ]
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.16.7",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.3.0",
+    "echarts": "^5.3.3",
+    "echarts-for-react": "^3.0.2",
+    "lodash-es": "^4.17.21",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.1",
+    "react-transition-group": "^4.4.2",
+    "url-loader": "^4.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/plugin-transform-runtime": "^7.16.8",
+    "@babel/preset-env": "^7.16.8",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "@storybook/addon-actions": "^6.4.12",
+    "@storybook/addon-docs": "^6.4.12",
+    "@storybook/addon-essentials": "^6.4.12",
+    "@storybook/addon-links": "^6.4.12",
+    "@storybook/builder-webpack5": "^6.4.12",
+    "@storybook/manager-webpack5": "^6.4.12",
+    "@storybook/react": "^6.4.12",
+    "@types/lodash-es": "^4",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "babel-loader": "^8.2.3",
+    "file-loader": "^6.2.0",
+    "typescript": "^4.5.4"
+  }
+}

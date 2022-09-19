@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "typeRoots": ["src/@types/**/*.ts","src/@types/assets/*.ts"],
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react"
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
+}

@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "target": "es6",
+    "module": "esnext",
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "strict": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
+    "noImplicitAny": false,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "dom.iterable",
+      "dom",
+      "esnext",
+      "es2015",
+      "es2016",
+      "es2017",
+      "es2018",
+      "es2020"
+    ]
+  },
+  "references": [
+    {
+      "path": "services/mi-ui"
+    },
+    {
+      "path": "services/mi"
+    }
+  ]
+}
